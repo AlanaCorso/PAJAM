@@ -79,6 +79,12 @@ body {
     margin-left: 15px;
 }
 
+.icons2 img {
+    width: 38px;
+    margin-left: 22px;
+}
+
+
 /* divisão entre seções p ficar + bonitinho */
 .linha-separadora2 {
     width: 100%;
@@ -116,7 +122,9 @@ body {
 .atracoes-principais {
     background-color: #53115c;
     width: 100%;
-    padding: 80px 0;
+    padding: 90px 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .conteudo-atracoes {
@@ -130,17 +138,17 @@ body {
 }
 
 .texto-atracoes h2 {
-    font-size: 54px;
+    font-size: 64px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family: 'Nosifer' sans-serif;
+    font-family: 'Nosifer', sans-serif;
     color: #ffffff;
 }
 
 .texto-atracoes p {
     font-size: 22px;
     line-height: 1.6;
-    font-family: 'Afacad' sans-serif;
+    font-family: 'Afacad', sans-serif;
     color: #f4f0f9;
 }
 
@@ -170,26 +178,14 @@ body {
     font-size: 64px;
     margin-bottom: 15px;
     color: #ffffff;
-    font-family: 'Nosifer' sans-serif;
+    font-family: 'Nosifer', sans-serif;
 }
 
 .texto-baixo p {
     font-size: 24px;
     line-height: 1.6;
     color: #f4f0f9;
-    font-family: 'Afacad' sans-serif;
-}
-
-/* RESPONSIVIDADEE */
-@media (max-width: 768px) {
-    .conteudo-atracoes {
-        grid-template-columns: 1fr;
-        padding: 0 25px;
-    }
-
-    .texto-atracoes h2 {
-        font-size: 26px;
-    }
+    font-family: 'Afacad', sans-serif;
 }
 
 /* divisão entre seções p ficar + bonitinho */
@@ -212,10 +208,10 @@ body {
 }
 
 .titulo-ingressos {
-    font-size: 50px;
+    font-size: 100px;
     letter-spacing: 3px;
     margin-bottom: 60px;
-    font-family: 'Bahiana' sans-serif;
+    font-family: 'Bahiana', sans-serif;
 }
 
 /* CARDS */
@@ -225,7 +221,7 @@ body {
     gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 5px;
-    font-family: 'Aladin' sans-serif;
+    font-family: 'Bahiana', sans-serif;
 }
 
 .card-ingresso {
@@ -333,3 +329,149 @@ body {
     transform: scale(1.15);
 }
 
+/* RESPONSIVIDADE */
+
+/* MOBILE (até 768px) */
+@media (max-width: 768px) {
+
+    /* CONTAINER PADRÃO */
+    .container {
+        width: 95%;
+    }
+
+    /* TOP BAR */
+    .top-bar {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* HEADER */
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    /* FUNDO / HERO */
+    .fundo {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .fundo h1 {
+        font-size: 36px;
+    }
+
+    /* ATRAÇÕES */
+    .conteudo-atracoes {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .texto-atracoes h2 {
+        font-size: 32px;
+    }
+
+    .texto-atracoes p {
+        font-size: 18px;
+    }
+
+    .texto-baixo h3 {
+        font-size: 36px;
+    }
+
+    .texto-baixo p {
+        font-size: 18px;
+    }
+
+    /* IMAGENS */
+    .imagem-topo img,
+    .imagem-baixo img {
+        width: 100%;
+    }
+
+    /* INGRESSOS */
+    .ingressos-terror {
+        padding: 60px 15px;
+    }
+
+    .titulo-ingressos {
+        font-size: 34px;
+    }
+
+    .cards-ingressos {
+        gap: 25px;
+    }
+
+    .card-ingresso {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* BOTÃO IMAGEM */
+    .btn-imagem img {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* TABLET (769px até 1024px) */
+
+@media (max-width: 1024px) {
+
+    /* HEADER */
+    .menu {
+        gap: 25px;
+    }
+
+    /* FUNDO */
+    .fundo h1 {
+        font-size: 46px;
+    }
+
+    /* ATRAÇÕES */
+    .conteudo-atracoes {
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .texto-atracoes h2 {
+        font-size: 42px;
+    }
+
+    .texto-baixo h3 {
+        font-size: 48px;
+    }
+
+    /* INGRESSOS */
+    .titulo-ingressos {
+        font-size: 42px;
+    }
+
+    .card-ingresso {
+        width: 280px;
+    }
+}
