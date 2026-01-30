@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -33,7 +34,7 @@
         </nav>
 
         <div class="icons">
-            <img src="imagens/user.png" alt="Usuário">
+            <img src="imagens/usuario.png" alt="Usuário">
             <img src="imagens/lupa.png" alt="Buscar">
             <img src="imagens/carrinho.png" alt="Carrinho">
         </div>
@@ -43,15 +44,19 @@
 
 <main>
 
+
 <!--fundo -->
 <section class="fundo" id="inicio">
     <div class="fundo-text">
-        <h1>LUGAR <br> FANTASMAGÓRICO <br> MAIS DIVERTIDO</h1>
+        <h1>O LUGAR <br> FANTASMAGÓRICO <br> MAIS DIVERTIDO</h1>
     </div>
 </section>
 
+<!-- divisão entre seções p ficar + bonitinho -->
+    <div class="linha-separadora2"></div>
+
 <!--  ATRAÇÕES  -->
-<section class="atracoes-principais">
+<section class="atracoes-principais" id="atracoes">
 
     <!-- PARTE SUPERIOR -->
     <section class="atracoes-principais">
@@ -60,9 +65,7 @@
         <div class="texto-atracoes">
             <h2>ATRAÇÕES<br>PRINCIPAIS</h2>
             <p>
-                O parque oferece espetáculos teatrais de terror, reunindo
-                ilusionismo, suspense e circo macabro em apresentações
-                interativas.
+                O parque oferece espetáculos teatrais de terror, reunindo ilusionismo, suspense e circo macabro em apresentações interativas.
             </p>
         </div>
 
@@ -75,61 +78,88 @@
         </div>
 
         <div class="texto-baixo">
-            <h3>ESPIRAL DE ABISMO</h3>
+            <h3>ESPIRAL DO ABISMO</h3>
             <p>
-                A montanha-russa do parque tem um formato em espiral que chama
-                atenção logo de longe. Seus trilhos se enrolam uns nos outros,
-                criando um percurso intenso e contínuo com descidas rápidas e
-                curvas apertadas.
+                A montanha-russa do parque tem um formato em espiral que chama atenção logo de longe. Seus trilhos se enrolam uns nos outros, criando um percurso intenso e contínuo. O movimento circular aumenta a sensação de vertigem e suspense.
             </p>
         </div>
 
     </div>
 </section>
 
+<!-- divisão entre seções p ficar + bonitinho -->
+<div class="linha-separadora"></div>
 
+<!--  INGRESSOS  -->
+<section class="ingressos-terror" id="ingressos">
 
-<!-- ===== INGRESSOS ===== -->
-<section class="ingressos" id="ingressos">
-    <h2 class="section-title">Ingressos</h2>
+    <h2 class="titulo-ingressos">PASSAPORTE</h2>
 
-    <div class="cards">
-        <div class="ticket">
-            <h3>Infantil</h3>
-            <p class="preco">R$ 79,90</p>
-            <p>Acesso às áreas infantis</p>
-            <button>Comprar</button>
+    <div class="cards-ingressos">
+
+        <div class="card-ingresso">
+            <img src="imagens/infantil.png" alt="Passaporte Infantil">
+            <div class="label">Infantil <br> R$50,00</div>
         </div>
 
-        <div class="ticket destaque">
-            <h3>Adulto</h3>
-            <p class="preco">R$ 129,90</p>
-            <p>Acesso a todas as atrações</p>
-            <button>Comprar</button>
+        <div class="card-ingresso">
+            <img src="imagens/adulto.png" alt="Passaporte Adulto">
+            <div class="label">Adulto <BR>R$75,00</BR></div>
         </div>
 
-        <div class="ticket">
-            <h3>VIP</h3>
-            <p class="preco">R$ 199,90</p>
-            <p>Fila rápida e áreas exclusivas</p>
-            <button>Comprar</button>
+        <div class="card-ingresso">
+            <img src="imagens/vip (2).png" alt="Passaporte VIP">
+            <div class="label">Vip <BR> R$100,00</BR></div>
         </div>
+
     </div>
-</section>
 
-<!-- ===== HORÁRIOS ===== -->
-<section class="horarios" id="horarios">
-    <h2 class="section-title">Horários de Funcionamento</h2>
-    <p>Segunda a Sexta: 10h às 20h</p>
-    <p>Sábados, Domingos e Feriados: 10h às 22h</p>
+    <div class="btn-imagem">
+    <img src="imagens/btn.png" alt="Comprar ingressos"></div>
+    
+  
+
+
 </section>
 
 </main>
 
+
 <!-- ===== FOOTER ===== -->
-<footer>
-    <p>© 2026 - Parque Temático Adrenalina | SENAI DS</p>
+<div class="linha-footer"></div>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <p>Sobre o parque</p>
+            <p>Mapa do parque</p>
+            <p>Endereço</p>
+            <p>Promoções</p>
+        </div>
+
+        <div class="footer-col">
+            <p>Shows Fornecidos</p>
+            <p>Dúvidas Frequentes</p>
+            <p>Fale conosco</p>
+            <p>Calendário de Funcionamento</p>
+        </div>
+
+        <div class="footer-col">
+            <p>Atrações</p>
+            <p>Horário de Funcionamento</p>
+            <p>Trabalhe Conosco</p>
+        </div>
+
+        <div class="footer-social">
+                <img src="imagens/facebook.png" alt="Facebook">
+                <img src="imagens/x.png" alt="X">
+
+                <div class="footer-social2">
+                <img src="imagens/insta.png" alt="Instagram">
+                <img src="imagens/wpp.png" alt="WhatsApp">
+        </div>
+
+    </div>
 </footer>
 
-</body>
-</html>
