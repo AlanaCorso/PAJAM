@@ -1,0 +1,218 @@
+* 
+/* tela inteira como um todo/caixa */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/*  PADRÕES  */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: #e5e5e5;
+    padding: 6px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.flags img {
+    width: 22px;
+    margin-left: 8px;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+    background: #790c19;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 120px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.icons img {
+    width: 32px;
+    margin-left: 15px;
+}
+
+/*  fundo */
+.fundo {
+    background: url("../imagens/fundo.webp") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    color: white;
+    position: relative;
+}
+
+.fundo-text {
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+.fundo h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'IM Feel DW Pica', sans-serif;
+}
+
+.atracoes-principais {
+    background-color: #6f6a6a;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.conteudo-atracoes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.texto-atracoes h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-atracoes p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.imagem-topo img,
+.imagem-baixo img {
+    width: 90%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.imagem-topo img,
+.imagem-baixo img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* efeito de relevo */
+.imagem-topo img:hover,
+.imagem-baixo img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.texto-baixo h3 {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.texto-baixo p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVIDADEE */
+@media (max-width: 768px) {
+    .conteudo-atracoes {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+    }
+
+    .texto-atracoes h2 {
+        font-size: 26px;
+    }
+}
+
+
+/* ===== INGRESSOS ===== */
+.ingressos {
+    padding: 70px 20px;
+    background: #eef3f8;
+}
+
+.ticket {
+    background: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ticket .preco {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.ticket button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #7b0d1e;
+    color: white;
+    border-radius: 5px;
+}
+
+.destaque {
+    border: 3px solid #ffcc00;
+}
+
+/* ===== HORÁRIOS ===== */
+.horarios {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #7b0d1e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
