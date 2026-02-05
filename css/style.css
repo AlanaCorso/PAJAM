@@ -16,7 +16,7 @@ body {
     background: #f5f5f5;
 }
 
-/*  PADRÕES  */
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -29,7 +29,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* TOP BAR */
+/* BARRINHA */
 .top-bar {
     background: #e5e5e5;
     padding: 6px 30px;
@@ -42,6 +42,8 @@ body {
     width: 22px;
     margin-left: 8px;
 }
+
+/* -------------------------------------------------------------------------------- */
 
 /* HEADER  */
 .main-header {
@@ -95,7 +97,9 @@ body {
     margin-bottom: 0px;
 }
 
-/*  fundo */
+/* -------------------------------------------------------------------------- */
+
+/*  fundo principal */
 .fundo {
     background: url("../imagens/fundo.webp") center/cover no-repeat;
     height: 80vh;
@@ -119,6 +123,9 @@ body {
     font-family: 'IM Fell DW Pica', sans-serif;
 }
 
+/* ----------------------------------------------------------------------------- */
+
+/* ATRAÇÕES */
 .atracoes-principais {
     background-color: #53115c;
     width: 100%;
@@ -198,7 +205,7 @@ body {
     margin-bottom: 0px;
 }
 
-
+/* -------------------------------------------------------------------------- */
 
 /*  INGRESSOS  */
 .ingressos-terror {
@@ -248,6 +255,7 @@ body {
     box-shadow: 0 20px 35px rgba(0,0,0,0.4);
 }
 
+/* BOTÃO */
 .btn-imagem {
     display: inline-block;
     margin-top: 40px;
@@ -263,6 +271,8 @@ body {
     transform: scale(1.08);
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
 }
+
+/* ----------------------------------------------------------------- */
 
 /*  FOOTER  */
 .linha-footer {
@@ -329,17 +339,19 @@ body {
     transform: scale(1.15);
 }
 
+/* ----------------------------------------------------------------------------- */
+
 /* RESPONSIVIDADE */
 
 /* MOBILE (até 768px) */
 @media (max-width: 768px) {
 
-    /* CONTAINER PADRÃO */
+    /* CONTAINER */
     .container {
         width: 95%;
     }
 
-    /* TOP BAR */
+    /* BARRINHA */
     .top-bar {
         flex-direction: column;
         gap: 8px;
@@ -362,7 +374,7 @@ body {
         margin-top: 10px;
     }
 
-    /* FUNDO / HERO */
+    /* FUNDO */
     .fundo {
         height: auto;
         padding: 60px 20px;
